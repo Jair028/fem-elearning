@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+}
+
+.header .logo {
+  width: calc(79.29 / 16 * 1rem);
+}
+
+/* tablet media query*/
+@media (width >= 50.625em) {
+  .wrapper {
+    padding-block: 24px;
+  }
+}
+
+/* desktop media query */
+@media (width >= 75em) {
+  .header .logo {
+    width: calc(111 / 16 * 1rem);
+  }
+}

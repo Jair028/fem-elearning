@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  font-style: var(--fs-7);
+  line-height: 1.5;
+  font-weight: 700;
+  padding: 10.5px 24px;
+  border-radius: 28px;
+  transition: 150ms ease-in-out;
+  transition-property: background, opacity;
+}
+
+.button.dark {
+  background: var(--color-blue-900);
+  color: var(--color-white);
+}
+
+.button.dark:hover {
+  background: var(--color-blue-600);
+}
+
+.button.pink {
+  background: var(--gradient-pink);
+  color: var(--color-white);
+}
+
+.button.pink:hover {
+  opacity: 0.5;
+}
+
+/* desktop media query */
+@media (width >= 75em) {
+  .button {
+    padding: 16px 32px;
+  }
+}
