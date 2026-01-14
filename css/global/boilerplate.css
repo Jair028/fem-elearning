@@ -47,3 +47,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.logo {
+  width: calc(79.29 / 16 * 1rem);
+  transition: opacity 150ms ease-in-out;
+}
+
+/* desktop media query */
+@media (width >= 75em) {
+  .logo {
+    width: calc(111 / 16 * 1rem);
+  }
+}
+
+.logo:hover {
+  opacity: 0.75;
+}
